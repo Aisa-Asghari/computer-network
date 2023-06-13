@@ -1,0 +1,23 @@
+Jun 27 16:54:41.564 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 27 16:54:41.564 HYPERVISOR: Started on IP = localhost, TCP port = 14467.
+Jun 27 16:54:41.880 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 27 16:54:41.880 HYPERVISOR: exec_cmd: hypervisor working_dir E:\uni\4\Project\AisaAsghari-9810031037\FinalProject\project-files\dynamips 
+Jun 27 16:54:41.884 GENERAL: working_dir=E:\uni\4\Project\AisaAsghari-9810031037\FinalProject\project-files\dynamips
+Jun 27 16:54:41.884 HYPERVISOR: exec_cmd: frsw create FrameRelay 
+Jun 27 16:54:58.734 HYPERVISOR: exec_cmd: nio create_udp udp-4b5486fe-2569-4d49-96a2-dfd519399eac 10044 127.0.0.1 10045 
+Jun 27 16:54:58.824 HYPERVISOR: exec_cmd: nio create_udp udp-8457558e-bc2f-4561-b93a-e5b9fdeca8d1 10048 127.0.0.1 10049 
+Jun 27 16:54:58.935 HYPERVISOR: exec_cmd: nio create_udp udp-f7ee8fd0-6a24-4a18-8c89-35e019a052d7 10052 127.0.0.1 10053 
+Jun 27 16:54:59.056 HYPERVISOR: exec_cmd: nio create_udp udp-6ae60956-db14-4ce7-88f6-95d04a4e5cae 10057 127.0.0.1 10056 
+Jun 27 16:55:00.105 HYPERVISOR: exec_cmd: nio create_udp udp-5a6ad2d6-bfb2-49a2-a0ab-67d614a32113 10061 127.0.0.1 10060 
+Jun 27 16:55:00.105 HYPERVISOR: exec_cmd: frsw create_vc FrameRelay udp-4b5486fe-2569-4d49-96a2-dfd519399eac 105 udp-5a6ad2d6-bfb2-49a2-a0ab-67d614a32113 501 
+Jun 27 16:55:00.115 HYPERVISOR: exec_cmd: frsw create_vc FrameRelay udp-5a6ad2d6-bfb2-49a2-a0ab-67d614a32113 501 udp-4b5486fe-2569-4d49-96a2-dfd519399eac 105 
+Jun 27 16:55:00.155 HYPERVISOR: exec_cmd: frsw create_vc FrameRelay udp-8457558e-bc2f-4561-b93a-e5b9fdeca8d1 205 udp-5a6ad2d6-bfb2-49a2-a0ab-67d614a32113 502 
+Jun 27 16:55:00.190 HYPERVISOR: exec_cmd: frsw create_vc FrameRelay udp-5a6ad2d6-bfb2-49a2-a0ab-67d614a32113 502 udp-8457558e-bc2f-4561-b93a-e5b9fdeca8d1 205 
+Jun 27 16:55:00.225 HYPERVISOR: exec_cmd: frsw create_vc FrameRelay udp-6ae60956-db14-4ce7-88f6-95d04a4e5cae 305 udp-5a6ad2d6-bfb2-49a2-a0ab-67d614a32113 503 
+Jun 27 16:55:00.258 HYPERVISOR: exec_cmd: frsw create_vc FrameRelay udp-5a6ad2d6-bfb2-49a2-a0ab-67d614a32113 503 udp-6ae60956-db14-4ce7-88f6-95d04a4e5cae 305 
+Jun 27 16:55:00.295 HYPERVISOR: exec_cmd: frsw create_vc FrameRelay udp-f7ee8fd0-6a24-4a18-8c89-35e019a052d7 405 udp-5a6ad2d6-bfb2-49a2-a0ab-67d614a32113 504 
+Jun 27 16:55:00.335 HYPERVISOR: exec_cmd: frsw create_vc FrameRelay udp-5a6ad2d6-bfb2-49a2-a0ab-67d614a32113 504 udp-f7ee8fd0-6a24-4a18-8c89-35e019a052d7 405 
+Jun 27 17:58:03.910 HYPERVISOR: exec_cmd: frsw delete FrameRelay 
+Jun 27 17:58:04.150 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 27 17:58:04.276 HYPERVISOR: Stopped.
+Jun 27 17:58:04.277 GENERAL: reset done.

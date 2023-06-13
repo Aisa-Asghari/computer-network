@@ -1,0 +1,14 @@
+Jun 27 16:54:40.666 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 27 16:54:40.666 HYPERVISOR: Started on IP = localhost, TCP port = 14463.
+Jun 27 16:54:41.117 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 27 16:54:41.117 HYPERVISOR: exec_cmd: hypervisor working_dir E:\uni\4\Project\AisaAsghari-9810031037\FinalProject\project-files\dynamips 
+Jun 27 16:54:41.315 GENERAL: working_dir=E:\uni\4\Project\AisaAsghari-9810031037\FinalProject\project-files\dynamips
+Jun 27 16:54:41.315 HYPERVISOR: exec_cmd: frsw create FrameRelay101 
+Jun 27 16:54:55.234 HYPERVISOR: exec_cmd: nio create_udp udp-21687a5c-e353-4bb3-9f59-cc44f2f62dfc 10019 127.0.0.1 10018 
+Jun 27 16:54:56.329 HYPERVISOR: exec_cmd: nio create_udp udp-e4b0bf5f-faad-4e4b-85be-a256cabc7318 10023 127.0.0.1 10022 
+Jun 27 16:54:56.329 HYPERVISOR: exec_cmd: frsw create_vc FrameRelay101 udp-21687a5c-e353-4bb3-9f59-cc44f2f62dfc 106 udp-e4b0bf5f-faad-4e4b-85be-a256cabc7318 601 
+Jun 27 16:54:56.350 HYPERVISOR: exec_cmd: frsw create_vc FrameRelay101 udp-e4b0bf5f-faad-4e4b-85be-a256cabc7318 601 udp-21687a5c-e353-4bb3-9f59-cc44f2f62dfc 106 
+Jun 27 17:58:03.903 HYPERVISOR: exec_cmd: frsw delete FrameRelay101 
+Jun 27 17:58:03.966 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 27 17:58:04.281 HYPERVISOR: Stopped.
+Jun 27 17:58:04.281 GENERAL: reset done.

@@ -1,0 +1,60 @@
+Jun 25 04:04:27.471 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 25 04:04:27.471 HYPERVISOR: Started on IP = localhost, TCP port = 14071.
+Jun 25 04:04:27.815 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 25 04:04:27.815 HYPERVISOR: exec_cmd: hypervisor working_dir E:\uni\4\Project\AisaAsghari-9810031037\FinalProject\project-files\dynamips 
+Jun 25 04:04:27.815 GENERAL: working_dir=E:\uni\4\Project\AisaAsghari-9810031037\FinalProject\project-files\dynamips
+Jun 25 04:04:27.815 HYPERVISOR: exec_cmd: hypervisor working_dir E:\uni\4\Project\AisaAsghari-9810031037\FinalProject\project-files\dynamips\e32eeb69-761a-4162-bdca-c8b18e8bc8c7 
+Jun 25 04:04:27.815 GENERAL: working_dir=E:\uni\4\Project\AisaAsghari-9810031037\FinalProject\project-files\dynamips\e32eeb69-761a-4162-bdca-c8b18e8bc8c7
+Jun 25 04:04:27.815 HYPERVISOR: exec_cmd: vm create BB1 11 c7200 
+Jun 25 04:04:27.815 VM: VM BB1 created.
+Jun 25 04:04:27.815 HYPERVISOR: exec_cmd: vm set_con_tcp_port BB1 5010 
+Jun 25 04:04:27.815 HYPERVISOR: exec_cmd: c7200 get_mac_addr BB1 
+Jun 25 04:04:27.815 HYPERVISOR: exec_cmd: vm get_status BB1 
+Jun 25 04:04:27.815 HYPERVISOR: exec_cmd: vm slot_add_binding BB1 0 0 C7200-IO-FE 
+Jun 25 04:04:27.815 HYPERVISOR: exec_cmd: vm set_disk0 BB1 0 
+Jun 25 04:04:27.815 HYPERVISOR: exec_cmd: vm set_exec_area BB1 64 
+Jun 25 04:04:27.830 HYPERVISOR: exec_cmd: vm get_status BB1 
+Jun 25 04:04:27.830 HYPERVISOR: exec_cmd: vm set_idle_pc BB1 0x62ef7a98 
+Jun 25 04:04:27.830 HYPERVISOR: exec_cmd: vm set_ios BB1 E:/gns3/images/IOS/C7200-AD.BIN 
+Jun 25 04:04:27.830 HYPERVISOR: exec_cmd: c7200 set_mac_addr BB1 ca0b.44c8.0000 
+Jun 25 04:04:27.830 HYPERVISOR: exec_cmd: vm set_nvram BB1 512 
+Jun 25 04:04:27.830 HYPERVISOR: exec_cmd: vm set_ram BB1 512 
+Jun 25 04:04:27.830 HYPERVISOR: exec_cmd: vm get_status BB1 
+Jun 25 04:04:27.830 HYPERVISOR: exec_cmd: vm slot_remove_binding BB1 0 0 
+Jun 25 04:04:27.830 HYPERVISOR: exec_cmd: vm get_status BB1 
+Jun 25 04:04:27.830 HYPERVISOR: exec_cmd: vm slot_add_binding BB1 0 0 C7200-IO-2FE 
+Jun 25 04:04:27.830 HYPERVISOR: exec_cmd: vm get_status BB1 
+Jun 25 04:04:27.830 HYPERVISOR: exec_cmd: vm slot_add_binding BB1 1 0 PA-4T+ 
+Jun 25 04:04:27.830 HYPERVISOR: exec_cmd: vm get_status BB1 
+Jun 25 04:04:27.830 HYPERVISOR: exec_cmd: vm slot_add_binding BB1 2 0 PA-8T 
+Jun 25 04:04:40.132 HYPERVISOR: exec_cmd: nio create_udp udp-2f945b34-98b5-493e-bd76-c89a627fb0ca 10054 127.0.0.1 10055 
+Jun 25 04:04:41.054 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BB1 1 0 udp-2f945b34-98b5-493e-bd76-c89a627fb0ca 
+Jun 25 04:04:41.054 HYPERVISOR: exec_cmd: vm get_status BB1 
+Jun 25 04:06:39.607 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jun 25 04:06:39.607 VM: VM Ghost created.
+Jun 25 04:06:39.607 HYPERVISOR: exec_cmd: vm set_ios Ghost E:/gns3/images/IOS/C7200-AD.BIN 
+Jun 25 04:06:39.607 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 25 04:06:39.607 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'E:\uni\4\Project\AisaAsghari-9810031037\FinalProject\project-files\dynamips\C7200-AD.BIN-512.ghost' 
+Jun 25 04:06:39.607 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jun 25 04:06:39.607 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 25 04:06:39.607 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jun 25 04:06:39.607 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 25 04:06:49.232 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 25 04:06:58.623 VM: VM Ghost shutdown.
+Jun 25 04:06:58.623 VM: VM Ghost destroyed.
+Jun 25 04:06:58.623 HYPERVISOR: exec_cmd: vm get_status BB1 
+Jun 25 04:06:58.623 HYPERVISOR: exec_cmd: vm set_config BB1 configs\i11_startup-config.cfg 
+Jun 25 04:06:58.623 HYPERVISOR: exec_cmd: vm start BB1 
+Jun 25 04:07:39.861 HYPERVISOR: exec_cmd: vm extract_config BB1 
+Jun 25 04:08:09.887 HYPERVISOR: exec_cmd: vm extract_config BB1 
+Jun 25 04:14:57.117 HYPERVISOR: exec_cmd: vm get_status BB1 
+Jun 25 04:14:57.117 HYPERVISOR: exec_cmd: vm stop BB1 
+Jun 25 04:14:57.323 VM: VM BB1 shutdown.
+Jun 25 04:14:57.324 HYPERVISOR: exec_cmd: vm extract_config BB1 
+Jun 25 04:14:57.757 HYPERVISOR: exec_cmd: vm get_status BB1 
+Jun 25 04:14:57.764 HYPERVISOR: exec_cmd: vm extract_config BB1 
+Jun 25 04:14:57.768 HYPERVISOR: exec_cmd: vm delete BB1 
+Jun 25 04:14:57.768 VM: VM BB1 destroyed.
+Jun 25 04:14:57.796 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 25 04:14:58.297 HYPERVISOR: Stopped.
+Jun 25 04:14:58.297 GENERAL: reset done.

@@ -1,0 +1,54 @@
+Jun 25 04:04:23.313 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 25 04:04:23.313 HYPERVISOR: Started on IP = localhost, TCP port = 14050.
+Jun 25 04:04:23.672 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 25 04:04:23.672 HYPERVISOR: exec_cmd: hypervisor working_dir E:\uni\4\Project\AisaAsghari-9810031037\FinalProject\project-files\dynamips 
+Jun 25 04:04:23.672 GENERAL: working_dir=E:\uni\4\Project\AisaAsghari-9810031037\FinalProject\project-files\dynamips
+Jun 25 04:04:23.672 HYPERVISOR: exec_cmd: hypervisor working_dir E:\uni\4\Project\AisaAsghari-9810031037\FinalProject\project-files\dynamips\6500546d-17a7-476d-8185-018f216d06fc 
+Jun 25 04:04:23.672 GENERAL: working_dir=E:\uni\4\Project\AisaAsghari-9810031037\FinalProject\project-files\dynamips\6500546d-17a7-476d-8185-018f216d06fc
+Jun 25 04:04:23.672 HYPERVISOR: exec_cmd: vm create ESW4 4 c3745 
+Jun 25 04:04:23.688 VM: VM ESW4 created.
+Jun 25 04:04:23.688 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW4 5003 
+Jun 25 04:04:23.688 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW4 
+Jun 25 04:04:23.688 HYPERVISOR: exec_cmd: vm set_disk0 ESW4 1 
+Jun 25 04:04:23.688 HYPERVISOR: exec_cmd: vm set_exec_area ESW4 64 
+Jun 25 04:04:23.688 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Jun 25 04:04:23.688 HYPERVISOR: exec_cmd: vm set_idle_pc ESW4 0x6023f5d0 
+Jun 25 04:04:23.688 HYPERVISOR: exec_cmd: vm set_ios ESW4 E:/GNS3/images/IOS/c3745-advipservicesk9-mz.124-25d.image 
+Jun 25 04:04:23.688 HYPERVISOR: exec_cmd: c3745 set_mac_addr ESW4 c404.4450.0000 
+Jun 25 04:04:23.703 HYPERVISOR: exec_cmd: vm set_nvram ESW4 256 
+Jun 25 04:04:23.703 HYPERVISOR: exec_cmd: vm set_ram ESW4 256 
+Jun 25 04:04:23.703 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Jun 25 04:04:23.703 HYPERVISOR: exec_cmd: vm slot_add_binding ESW4 1 0 NM-16ESW 
+Jun 25 04:04:23.703 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Jun 25 04:04:23.703 HYPERVISOR: exec_cmd: vm slot_add_binding ESW4 2 0 NM-16ESW 
+Jun 25 04:04:23.703 HYPERVISOR: exec_cmd: vm slot_add_binding ESW4 0 16 WIC-1T 
+Jun 25 04:04:23.703 HYPERVISOR: exec_cmd: vm slot_add_binding ESW4 0 32 WIC-1T 
+Jun 25 04:04:36.053 HYPERVISOR: exec_cmd: nio create_udp udp-e5717703-8be3-440a-a206-f0b38703907f 10034 127.0.0.1 10035 
+Jun 25 04:04:36.944 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW4 1 1 udp-e5717703-8be3-440a-a206-f0b38703907f 
+Jun 25 04:04:36.944 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Jun 25 04:05:09.988 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jun 25 04:05:09.988 VM: VM Ghost created.
+Jun 25 04:05:09.988 HYPERVISOR: exec_cmd: vm set_ios Ghost E:/GNS3/images/IOS/c3745-advipservicesk9-mz.124-25d.image 
+Jun 25 04:05:09.988 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 25 04:05:09.988 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'E:\uni\4\Project\AisaAsghari-9810031037\FinalProject\project-files\dynamips\c3745-advipservicesk9-mz.124-25d.image-256.ghost' 
+Jun 25 04:05:09.988 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jun 25 04:05:09.988 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 25 04:05:09.988 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jun 25 04:05:09.988 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 25 04:05:10.253 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 25 04:05:10.441 VM: VM Ghost shutdown.
+Jun 25 04:05:10.441 VM: VM Ghost destroyed.
+Jun 25 04:05:10.441 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Jun 25 04:05:10.441 HYPERVISOR: exec_cmd: vm set_config ESW4 configs\i4_startup-config.cfg 
+Jun 25 04:05:10.441 HYPERVISOR: exec_cmd: vm start ESW4 
+Jun 25 04:14:56.278 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Jun 25 04:14:56.279 HYPERVISOR: exec_cmd: vm stop ESW4 
+Jun 25 04:14:56.391 VM: VM ESW4 shutdown.
+Jun 25 04:14:56.393 HYPERVISOR: exec_cmd: vm extract_config ESW4 
+Jun 25 04:14:57.869 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Jun 25 04:14:57.874 HYPERVISOR: exec_cmd: vm extract_config ESW4 
+Jun 25 04:14:57.879 HYPERVISOR: exec_cmd: vm delete ESW4 
+Jun 25 04:14:57.879 VM: VM ESW4 destroyed.
+Jun 25 04:14:57.882 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 25 04:14:58.297 HYPERVISOR: Stopped.
+Jun 25 04:14:58.297 GENERAL: reset done.
